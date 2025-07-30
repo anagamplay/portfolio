@@ -31,7 +31,7 @@ export const About = () => {
             Sobre <span className="gradient-text">Mim</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Uma desenvolvedora apaixonada por criar experiências móveis que fazem a diferença na vida das pessoas
+            Sou Ana Clara Silvestre, uma desenvolvedora apaixonada por criar experiências móveis que fazem a diferença na vida das pessoas
           </p>
         </div>
         

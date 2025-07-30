@@ -21,9 +21,12 @@ export const Hero = () => {
         <div className="space-y-8 animate-fade-in-up">
           <div className="space-y-4">
             <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
-              <span className="gradient-text">Mobile</span><br />
-              <span className="text-foreground">Developer</span>
+              <span className="gradient-text">Ana Clara</span><br />
+              <span className="text-foreground">Silvestre</span>
             </h1>
+            <h2 className="text-2xl md:text-3xl font-semibold text-muted-foreground mt-4">
+              Mobile Developer
+            </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Criando experiências móveis excepcionais que conectam pessoas e transformam ideias em realidade digital
             </p>
