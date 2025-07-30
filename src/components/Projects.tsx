@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { PhoneFrame, AppScreen } from "@/components/PhoneFrame";
 
 const projects = [
   {
@@ -91,6 +92,151 @@ export const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* iPhone Mockups Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold mb-4">
+              <span className="gradient-text">Experiências</span> em Ação
+            </h3>
+            <p className="text-muted-foreground">
+              Veja como os apps ganham vida nas telas dos usuários
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center justify-center">
+            {/* Delivery App */}
+            <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+              <PhoneFrame>
+                <AppScreen
+                  title="FoodExpress"
+                  description="Delivery rápido e seguro"
+                  backgroundColor="bg-gradient-to-br from-orange-50 to-red-100"
+                  primaryColor="bg-orange-500"
+                >
+                  <div className="space-y-4">
+                    <div className="bg-white/80 rounded-xl p-4">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                          🍕
+                        </div>
+                        <div>
+                          <div className="font-semibold text-gray-800">Pizza Margherita</div>
+                          <div className="text-sm text-gray-600">Tradicional italiana</div>
+                        </div>
+                        <div className="ml-auto text-orange-600 font-bold">R$ 28,90</div>
+                      </div>
+                      <div className="flex gap-2">
+                        <div className="flex-1 bg-orange-500 text-white rounded-lg py-2 text-center text-sm font-semibold">
+                          Adicionar
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-white/80 rounded-xl p-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                          🍔
+                        </div>
+                        <div>
+                          <div className="font-semibold text-gray-800">Burger Gourmet</div>
+                          <div className="text-sm text-gray-600">Com bacon e queijo</div>
+                        </div>
+                        <div className="ml-auto text-orange-600 font-bold">R$ 32,90</div>
+                      </div>
+                    </div>
+                  </div>
+                </AppScreen>
+              </PhoneFrame>
+            </div>
+            
+            {/* Fintech App */}
+            <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+              <PhoneFrame>
+                <AppScreen
+                  title="MoneyFlow"
+                  description="Seu banco digital"
+                  backgroundColor="bg-gradient-to-br from-blue-50 to-indigo-100"
+                  primaryColor="bg-blue-600"
+                >
+                  <div className="space-y-4">
+                    <div className="bg-white/80 rounded-xl p-4">
+                      <div className="text-sm text-gray-600 mb-1">Saldo disponível</div>
+                      <div className="text-2xl font-bold text-gray-800 mb-3">R$ 4.847,32</div>
+                      <div className="flex gap-2">
+                        <div className="flex-1 bg-blue-600 text-white rounded-lg py-2 text-center text-sm">
+                          Transferir
+                        </div>
+                        <div className="flex-1 border border-blue-600 text-blue-600 rounded-lg py-2 text-center text-sm">
+                          Pagar
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-white/80 rounded-xl p-4">
+                      <div className="text-sm font-semibold text-gray-800 mb-3">Últimas movimentações</div>
+                      <div className="space-y-2">
+                        <div className="flex justify-between items-center">
+                          <div className="text-sm text-gray-600">Transferência recebida</div>
+                          <div className="text-sm font-semibold text-green-600">+R$ 1.200,00</div>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <div className="text-sm text-gray-600">Compra no cartão</div>
+                          <div className="text-sm font-semibold text-red-600">-R$ 89,90</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </AppScreen>
+              </PhoneFrame>
+            </div>
+            
+            {/* E-commerce App */}
+            <div className="flex justify-center animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+              <PhoneFrame>
+                <AppScreen
+                  title="SocialShop"
+                  description="Compre e compartilhe"
+                  backgroundColor="bg-gradient-to-br from-purple-50 to-pink-100"
+                  primaryColor="bg-purple-600"
+                >
+                  <div className="space-y-4">
+                    <div className="bg-white/80 rounded-xl p-4">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-8 h-8 bg-purple-100 rounded-full" />
+                        <div className="flex-1">
+                          <div className="font-semibold text-gray-800 text-sm">@fashionista_ana</div>
+                          <div className="text-xs text-gray-600">está ao vivo</div>
+                        </div>
+                        <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                      </div>
+                      <div className="bg-gradient-to-r from-purple-200 to-pink-200 rounded-lg h-20 mb-3 flex items-center justify-center">
+                        <div className="text-purple-800 text-sm font-semibold">Live Shopping</div>
+                      </div>
+                      <div className="flex gap-2">
+                        <div className="flex-1 bg-purple-600 text-white rounded-lg py-2 text-center text-xs">
+                          Participar
+                        </div>
+                        <div className="w-8 h-8 border border-purple-600 rounded-lg flex items-center justify-center">
+                          ❤️
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-white/80 rounded-xl p-3">
+                      <div className="text-xs font-semibold text-gray-800 mb-2">Produtos em destaque</div>
+                      <div className="flex gap-2">
+                        <div className="w-16 h-16 bg-purple-100 rounded-lg" />
+                        <div className="w-16 h-16 bg-pink-100 rounded-lg" />
+                        <div className="w-16 h-16 bg-purple-100 rounded-lg" />
+                      </div>
+                    </div>
+                  </div>
+                </AppScreen>
+              </PhoneFrame>
+            </div>
+          </div>
         </div>
         
         {/* View All Button */}
