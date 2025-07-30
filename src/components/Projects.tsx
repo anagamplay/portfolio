@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { PhoneFrame, AppScreen } from "@/components/PhoneFrame";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
+    id: "delivery-premium",
     title: "App de Delivery Premium",
     description: "Aplicativo completo de delivery com interface elegante, sistema de pagamento integrado e rastreamento em tempo real.",
     tech: ["React Native", "TypeScript", "Firebase"],
@@ -10,6 +12,7 @@ const projects = [
     category: "Mobile App"
   },
   {
+    id: "fintech-mobile",
     title: "Fintech Mobile",
     description: "Solução bancária móvel com foco em UX/UI excepcional, biometria e transações seguras.",
     tech: ["Flutter", "Node.js", "PostgreSQL"],
@@ -17,6 +20,7 @@ const projects = [
     category: "Fintech"
   },
   {
+    id: "ecommerce-social",
     title: "E-commerce Social",
     description: "Plataforma social de compras com recursos de live shopping e integração com redes sociais.",
     tech: ["React Native", "GraphQL", "AWS"],
@@ -81,8 +85,8 @@ export const Projects = () => {
               
               {/* Actions */}
               <div className="flex gap-3">
-                <Button variant="hero" size="sm" className="flex-1">
-                  Ver Projeto
+                <Button variant="hero" size="sm" className="flex-1" asChild>
+                  <Link to={`/projeto/${project.id}`}>Ver Projeto</Link>
                 </Button>
                 <Button variant="ghost" size="sm">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
