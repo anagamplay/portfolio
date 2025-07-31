@@ -5,40 +5,40 @@ const skillCategories = [
     title: "Mobile Development",
     icon: "📱",
     skills: [
-      { name: "React Native", level: 95 },
-      { name: "Flutter", level: 88 },
-      { name: "Swift/iOS", level: 82 },
-      { name: "Kotlin/Android", level: 85 }
+      "React Native",
+      "Flutter", 
+      "Swift/iOS",
+      "Kotlin/Android"
     ]
   },
   {
     title: "Frontend & Backend",
     icon: "⚡",
     skills: [
-      { name: "React.js", level: 92 },
-      { name: "TypeScript", level: 90 },
-      { name: "Node.js", level: 85 },
-      { name: "GraphQL", level: 80 }
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "GraphQL"
     ]
   },
   {
     title: "Design & UX",
     icon: "🎨",
     skills: [
-      { name: "Figma", level: 88 },
-      { name: "UI/UX Design", level: 85 },
-      { name: "Prototyping", level: 82 },
-      { name: "Design Systems", level: 90 }
+      "Figma",
+      "UI/UX Design",
+      "Prototyping",
+      "Design Systems"
     ]
   },
   {
     title: "DevOps & Tools",
     icon: "🛠️",
     skills: [
-      { name: "AWS", level: 78 },
-      { name: "Firebase", level: 92 },
-      { name: "CI/CD", level: 85 },
-      { name: "Testing", level: 88 }
+      "AWS",
+      "Firebase",
+      "CI/CD",
+      "Testing"
     ]
   }
 ];
@@ -85,29 +85,14 @@ export const Skills = () => {
               {skillCategories[activeCategory].title}
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {skillCategories[activeCategory].skills.map((skill, index) => (
                 <div 
                   key={index}
-                  className="space-y-3"
+                  className="flex items-center justify-center p-4 bg-card rounded-lg border hover:shadow-md transition-all duration-300 hover:scale-105"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  {/* Skill Name and Percentage */}
-                  <div className="flex justify-between items-center">
-                    <span className="font-semibold text-lg">{skill.name}</span>
-                    <span className="text-primary font-bold">{skill.level}%</span>
-                  </div>
-                  
-                  {/* Progress Bar */}
-                  <div className="relative h-3 bg-muted rounded-full overflow-hidden">
-                    <div 
-                      className="absolute top-0 left-0 h-full bg-gradient-primary rounded-full transition-all duration-1000 ease-out"
-                      style={{ 
-                        width: activeCategory === skillCategories.findIndex(cat => cat.skills.includes(skill)) ? `${skill.level}%` : '0%'
-                      }}
-                    />
-                    <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-50 animate-pulse" />
-                  </div>
+                  <span className="font-semibold text-lg text-center">{skill}</span>
                 </div>
               ))}
             </div>
