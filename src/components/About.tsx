@@ -1,24 +1,19 @@
 export const About = () => {
   const timeline = [
     {
+      year: "2025",
+      title: "Flutter Developer - Play55",
+      description: "Desenvolvimento e evolução de aplicativos móveis escaláveis em Flutter, com foco em integrações e arquitetura limpa."
+    },
+    {
       year: "2024",
-      title: "Senior Mobile Developer",
-      description: "Liderando projetos de alta complexidade e mentorando desenvolvedores júnior"
+      title: "Web & Mobile Developer - COS Software",
+      description: "Desenvolvimento de sistemas web e móveis com foco em integrações, arquitetura modular e UI responsiva."
     },
     {
-      year: "2022",
-      title: "Mobile Architect",
-      description: "Arquitetura de aplicações escaláveis e implementação de melhores práticas"
-    },
-    {
-      year: "2020",
-      title: "Full Stack Mobile",
-      description: "Desenvolvimento end-to-end de aplicações móveis completas"
-    },
-    {
-      year: "2018",
-      title: "Mobile Developer",
-      description: "Início da jornada no desenvolvimento mobile com React Native"
+      year: "2023",
+      title: "Full-Stack Developer - IFMS",
+      description: "Desenvolvimento de sistema de monitoramento full-stack, unindo processamento de imagens em Python/Flask com frontend em Flutter."
     }
   ];
 
@@ -34,7 +29,7 @@ export const About = () => {
             Sou Ana Clara Silvestre, uma desenvolvedora apaixonada por criar experiências móveis que fazem a diferença na vida das pessoas
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-left">
@@ -44,19 +39,18 @@ export const About = () => {
               </h3>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Com mais de 6 anos de experiência no desenvolvimento mobile, tenho uma paixão especial por criar aplicações que não apenas funcionam perfeitamente, mas que também proporcionam experiências memoráveis aos usuários.
+                  Apaixonada por criar soluções digitais que unem funcionalidade e ótima experiência do usuário, atuo no desenvolvimento e evolução de aplicativos móveis com foco em qualidade, escalabilidade e design intuitivo.               </p>
+                <p>
+                  Minha abordagem prioriza arquiteturas bem estruturadas, interfaces responsivas e integrações eficientes, sempre buscando alinhar tecnologia e propósito.
                 </p>
                 <p>
-                  Minha jornada começou com a curiosidade de entender como os aplicativos que usamos diariamente são construídos. Hoje, sou especialista em React Native, Flutter, e no ecossistema completo de desenvolvimento mobile.
-                </p>
-                <p>
-                  Acredito que o melhor código é aquele que resolve problemas reais e melhora a vida das pessoas. Cada projeto é uma oportunidade de inovar e superar expectativas.
+                  Acredito que cada projeto é uma oportunidade de transformar ideias em produtos digitais que gerem valor real e impacto positivo para os usuários.
                 </p>
               </div>
             </div>
-            
+
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
+            {/* <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold gradient-text">50+</div>
                 <div className="text-sm text-muted-foreground">Projetos Entregues</div>
@@ -69,15 +63,15 @@ export const About = () => {
                 <div className="text-3xl font-bold gradient-text">1M+</div>
                 <div className="text-sm text-muted-foreground">Downloads Apps</div>
               </div>
-            </div>
+            </div> */}
           </div>
-          
+
           {/* Right Content - Timeline */}
           <div className="animate-fade-in-right">
             <h3 className="text-2xl font-bold mb-8">Jornada Profissional</h3>
             <div className="space-y-6">
               {timeline.map((item, index) => (
-                <div 
+                <div
                   key={index}
                   className="flex gap-6 group"
                   style={{ animationDelay: `${index * 0.1}s` }}
@@ -88,7 +82,7 @@ export const About = () => {
                       {item.year}
                     </div>
                   </div>
-                  
+
                   {/* Content */}
                   <div className="flex-1 pb-6">
                     <h4 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
