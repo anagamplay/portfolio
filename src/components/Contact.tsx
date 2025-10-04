@@ -7,7 +7,7 @@ export const Contact = () => {
         {/* Section Header */}
         <div className="mb-16 animate-fade-in-up">
           <h2 className="text-5xl font-bold mb-6">
-            Vamos <span className="gradient-text">Conversar?</span>
+            Entre em <span className="gradient-text">Contato!</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Tem um projeto incrível em mente? Estou sempre aberta para discutir novas oportunidades e desafios
@@ -19,31 +19,18 @@ export const Contact = () => {
           <div className="elegant-card p-6 hover:scale-105 transition-transform cursor-pointer">
             <div className="text-3xl mb-4">📧</div>
             <h3 className="font-bold mb-2">Email</h3>
-            <p className="text-muted-foreground">contato@portfolio.dev</p>
+            <p className="text-muted-foreground">ana.silvestre.contact@gmail.com</p>
           </div>
           <div className="elegant-card p-6 hover:scale-105 transition-transform cursor-pointer">
             <div className="text-3xl mb-4">💼</div>
             <h3 className="font-bold mb-2">LinkedIn</h3>
-            <p className="text-muted-foreground">linkedin.com/in/dev</p>
+            <a href="https://www.linkedin.com/in/ana-clara-oliveira-47853b2a9/" target="__blank" className="text-muted-foreground">linkedin.com/in/ana-clara-oliveira-47853b2a9</a>
           </div>
           <div className="elegant-card p-6 hover:scale-105 transition-transform cursor-pointer">
             <div className="text-3xl mb-4">📱</div>
             <h3 className="font-bold mb-2">WhatsApp</h3>
-            <p className="text-muted-foreground">+55 11 99999-9999</p>
+            <p className="text-muted-foreground">Em breve </p>
           </div>
-        </div>
-        
-        {/* CTA */}
-        <div className="space-y-6">
-          <Button variant="hero" size="xl" className="group">
-            Iniciar Conversa
-            <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Button>
-          <p className="text-sm text-muted-foreground">
-            Resposta garantida em até 24 horas
-          </p>
         </div>
       </div>
     </section>
