@@ -35,9 +35,6 @@ export const Navigation = () => {
             <a href="#projects" className="text-foreground/80 hover:text-foreground transition-colors">
               Projetos
             </a>
-            <a href="#skills" className="text-foreground/80 hover:text-foreground transition-colors">
-              Skills
-            </a>
             <a href="#contact" className="text-foreground/80 hover:text-foreground transition-colors">
               Contato
             </a>
