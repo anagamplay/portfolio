@@ -21,7 +21,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold gradient-text">
-            Portfolio
+            ACS
           </div>
           
           {/* Navigation Links */}
@@ -45,7 +45,7 @@ export const Navigation = () => {
           
           {/* CTA Button */}
           <Button variant="hero" className="hidden md:inline-flex">
-            Vamos Conversar
+            Entre em contato
           </Button>
           
           {/* Mobile Menu Button */}
